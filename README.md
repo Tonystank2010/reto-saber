@@ -13,8 +13,10 @@ Las tres pruebas forman parte de la planeación, pero todavía no se ha decidido
 - `PROYECTO.md`: brief, límites y alcance por acordar.
 - `DECISIONES.md`: decisiones confirmadas por el equipo.
 - `TAREAS.md`: registro de tareas y estado.
+- `IDEAS.md`: propuestas pendientes de discusión y aprobación.
 - `.github/copilot-instructions.md`: criterios de colaboración para cambios futuros.
 - `prototypes/`: demos HTML recibidos, conservados como referencia.
+- `contenido/PLANTILLA-PREGUNTA.md`: ficha de trabajo para redactar y revisar preguntas originales.
 - `planning/business/`: plan de negocio, guía interna y hojas de trabajo.
 - `marketing/drafts/`: textos e imágenes publicitarias de borrador, no aprobados para publicación.
 - `docs/`: notas de lectura y orientación del paquete.

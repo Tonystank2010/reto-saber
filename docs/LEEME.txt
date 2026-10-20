@@ -1,0 +1,72 @@
+PROYECTO HERMANOS OSPINA TABORDA - Empresa 5.
+==============================================
+Socios: Samuel, Sergio y Juan Manuel · Mentora: Bety
+
+DEMOS (doble clic para abrir en Chrome o Edge; para verlas como celular: F12 y luego Ctrl+Shift+M)
+
+*** NUEVAS (version 2) ***
+A. Reto Saber v2 - Demo inicial.html
+   Siempre empieza en cero. Despues de registrarse, la app pregunta "como te sientes en cada area"
+   (Me cuesta / Mas o menos / Me va bien) y hace una evaluacion de nivel que se adapta:
+   si aciertas, la siguiente pregunta es mas dificil; si fallas, mas facil.
+   Con el resultado ajusta todo el juego por area:
+     Basico: 35 s por pregunta, 2 pistas, preguntas sencillas
+     Intermedio: 25 s, 1 pista, preguntas de nivel medio
+     Avanzado: 20 s, sin pistas, preguntas retadoras
+   Antes de cada evaluacion hay un REPASO CON TARJETAS (flashcards): primero explican el tema
+   y luego hay preguntas de practica sin perder vidas. Si fallas, la tarjeta se voltea y
+   muestra la respuesta correcta y por que. La evaluacion se abre al terminar el repaso.
+   Si te va muy bien (80% o mas) subes de nivel; si te cuesta (40% o menos) baja la dificultad.
+B. Reto Saber v2 - Demo con 2 usuarios.html
+   Ya trae dos usuarios inscritos para comparar como cambia el juego segun el nivel:
+     Sergio Ospina (10.o, Plan Anual): Avanzado en Lectura e Ingles, Basico en Sociales.
+     Valentina Rios (11.o, Plan Saber 11): Basica en Matematicas, Sociales y Ciencias.
+   Entrar tambien con: valentina@ejemplo.com, acudiente2@ejemplo.com (panel del acudiente).
+
+*** ANTERIORES ***
+
+0. Reto Saber - Demo desde el inicio.html   (demo limpia)
+   Siempre empieza en cero: bienvenida > elegir plan > perfil (con pais) >
+   Cuentanos de ti > acudiente > autorizacion > diagnostico > resumen y pago (simulado).
+
+1. Reto Saber - Demo.html   (version 9, con la demo de Sergio)
+   - Demo de Sergio con datos de ejemplo (Plan Anual pagado).
+   - "Ya tengo cuenta": entrar con sergio@ejemplo.com (estudiante)
+     o acudiente@ejemplo.com (panel del acudiente).
+   - Cartillas para simulacro por modulo (boton morado en Inicio).
+   - Retos con 5 vidas. En plan Gratis el progreso no se guarda.
+   - Premium: preventa Plan Anual USD 12 y Plan Saber 11 USD 10.
+     Descuentos: 2,5% por red (hasta 10%) + referidos (hasta 10%), maximo 20%.
+   - Ranking: liga privada solo entre amigos que se aceptan.
+
+COMO SE VERIA PUBLICADO EN LA NUBE (version en linea, se abre desde cualquier celular):
+- v2 Demo inicial:      https://claude.ai/artifact/8LMvAYLdNdGjiCPcDJa5Pn
+- v2 Demo 2 usuarios:   https://claude.ai/artifact/Dw3BE9AbriAu5c19hUexwE
+- Prototipo:            https://claude.ai/artifact/WWyKKMkKLxfGyfbMKdKGU2
+- Demo desde el inicio: https://claude.ai/artifact/FCgMHxdApQSk8M1nVS6UL3
+- Plan (documento):     https://claude.ai/code/artifact/a83c8e77-7e31-4513-af18-5a326f27978f
+  Son privados: para mostrarlos a otras personas hay que compartirlos desde el boton Compartir.
+  En la version real, la app iria en un dominio propio (por ejemplo reto5.com) instalable en el celular.
+
+ARCHIVOS DE TRABAJO
+2. Plan de negocio Empresa 5 - Samuel y Sergio.xlsx   (manejo del negocio)
+   Resumen, Supuestos, Precios y descuentos (calculadora), Proyeccion 24 meses (3 escenarios),
+   Reparto socios (40% empresa, 20% Juanma, 20% Sergio, 20% Samuel), Escenarios por usuarios,
+   Paises LatAm, Ventas y Gastos (para registrar), Cartillas, Roles y tareas.
+   Celdas azules = se pueden cambiar. Las filas de ejemplo en Ventas y Gastos se borran al empezar.
+3. Plan Empresa 5 - App Pruebas Saber.docx   (plan de empresa completo)
+4. Publicidad - Post Instagram.png, Publicidad - Historia Instagram.png, Publicidad - Textos para redes.txt
+5. Material de consulta (ICFES): guia de competencias por modulo.
+   OJO: el ICFES prohibe venderlo o adaptarlo con fines de lucro. Usarlo solo como guia;
+   las preguntas de la app deben ser propias.
+
+PARA REVISAR HOY CON DANNY Y JUANMA (15 minutos)
+[ ] Abrir "Demo desde el inicio": Empezar > elegir plan > registro completo > diagnostico.
+[ ] Tocar "Pais" y elegir Mexico o Chile: ver la prueba que aplica y el boton a la pagina oficial.
+[ ] Jugar un reto en plan Gratis: ver las 5 vidas y el aviso de que el progreso no se guarda.
+[ ] Abrir "Demo.html" > demo de Sergio > Cartillas, Liga de amigos y Premium (descuentos).
+[ ] Entrar con acudiente@ejemplo.com y ver el panel del acudiente.
+[ ] Excel > hoja "Arranque 1 nov": ingresos y gastos mes a mes desde el 1 de noviembre.
+[ ] Anotar todo lo que falle o quieran cambiar en Excel > "Pruebas con amigos".
+
+BETC

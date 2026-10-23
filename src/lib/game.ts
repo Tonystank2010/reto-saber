@@ -58,6 +58,40 @@ export function advanceDivision(division: Division, movement: LeagueMovement): D
   return division;
 }
 
+export function getWeeklyRollover(
+  division: Division,
+  weeklyXp: number,
+  completedWeek: string,
+  currentWeek: string,
+  previousWeek: string,
+  otherScores: number[],
+): {
+  division: Division;
+  lastMovement: LeagueMovement;
+  lastMovementWeek: string;
+  weekKey: string;
+  weeklyXp: number;
+} {
+  const isImmediatelyPreviousWeek = completedWeek === previousWeek;
+  let movement: LeagueMovement = 'Se mantiene';
+  if (isImmediatelyPreviousWeek) {
+    const standings = [
+      ...otherScores.map((score, index) => ({ score, index, current: false })),
+      { score: weeklyXp, index: otherScores.length, current: true },
+    ].sort((left, right) => right.score - left.score || left.index - right.index);
+    const position = standings.findIndex((participant) => participant.current) + 1;
+    movement = getLeagueMovement(position, standings.length, division);
+  }
+
+  return {
+    division: advanceDivision(division, movement),
+    lastMovement: movement,
+    lastMovementWeek: currentWeek,
+    weekKey: currentWeek,
+    weeklyXp: 0,
+  };
+}
+
 function dateKey(date: Date): string {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, '0');

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { advanceDivision, calculateXp, getLeagueMovement, updateDailyStreak, updateReview } from './game';
+import { advanceDivision, calculateXp, getLeagueMovement, getWeeklyRollover, updateDailyStreak, updateReview } from './game';
 
 describe('progreso de práctica', () => {
   it('calcula XP sin permitir puntos negativos ni fracciones', () => {
@@ -49,5 +49,17 @@ describe('ligas', () => {
     expect(advanceDivision('Plata', 'Ascenso')).toBe('Oro');
     expect(advanceDivision('Plata', 'Descenso')).toBe('Bronce');
     expect(advanceDivision('Oro', 'Ascenso')).toBe('Oro');
+  });
+
+  it('cierra una semana una sola vez, evita aplicar resultados obsoletos y resuelve empates de forma estable', () => {
+    expect(getWeeklyRollover('Bronce', 82, '2026-42', '2026-43', '2026-42', [68, 52, 39, 28, 18, 9]).division).toBe('Plata');
+    expect(getWeeklyRollover('Bronce', 82, '2026-40', '2026-43', '2026-42', [68, 52, 39, 28, 18, 9])).toEqual({
+      division: 'Bronce',
+      lastMovement: 'Se mantiene',
+      lastMovementWeek: '2026-43',
+      weekKey: '2026-43',
+      weeklyXp: 0,
+    });
+    expect(getWeeklyRollover('Bronce', 68, '2026-42', '2026-43', '2026-42', [82, 68, 52, 39, 28, 18, 9]).division).toBe('Bronce');
   });
 });

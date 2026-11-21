@@ -4,9 +4,9 @@ Proyecto de la Empresa 5.: experiencias de práctica con preguntas originales y 
 
 ## Estado
 
-Estamos en **planeación e ideación**. Hay prototipos HTML y documentos de trabajo; no son todavía un servicio publicado. Los inicios de sesión, el almacenamiento, algunos resultados, avisos y pagos mostrados en los prototipos pueden ser simulados. No presentar puntajes como predicciones oficiales.
+Estamos en **planeación e ideación**. El demo web actual es un prototipo local; no es todavía un servicio publicado. El inicio de sesión y almacenamiento son simulados. No presentar puntajes como predicciones oficiales.
 
-Las tres pruebas forman parte de la planeación, pero todavía no se ha decidido si se desarrollarán o lanzarán juntas ni cuál será la prioridad del piloto. No se está implementando código en este momento.
+Las tres pruebas forman parte de la planeación, pero todavía no se ha decidido si se desarrollarán o lanzarán juntas ni cuál será la prioridad del piloto. A solicitud del usuario, el demo HTML adjunto se conserva en `web/index.html` para verlo en Vercel; esto no autoriza el desarrollo del producto, infraestructura ni un piloto.
 
 ## Estructura
 
@@ -15,7 +15,7 @@ Las tres pruebas forman parte de la planeación, pero todavía no se ha decidido
 - `TAREAS.md`: registro de tareas y estado.
 - `IDEAS.md`: propuestas pendientes de discusión y aprobación.
 - `.github/copilot-instructions.md`: criterios de colaboración para cambios futuros.
-- `prototypes/`: demos HTML recibidos, conservados como referencia.
+- `web/index.html`: demo descargable adjunto, aislado como raíz de despliegue estático en Vercel.
 - `contenido/PLANTILLA-PREGUNTA.md`: ficha de trabajo para redactar y revisar preguntas originales.
 - `planning/business/`: plan de negocio, guía interna y hojas de trabajo.
 - `marketing/drafts/`: textos e imágenes publicitarias de borrador, no aprobados para publicación.
@@ -25,8 +25,12 @@ Las tres pruebas forman parte de la planeación, pero todavía no se ha decidido
 
 Las preguntas de práctica deben ser originales. Los documentos oficiales adjuntos se excluyeron de este repositorio: pueden servir para consulta, pero deben respetarse sus derechos y condiciones de uso. No copiar ni vender preguntas oficiales.
 
-Los planes y precios visibles en algunos prototipos y piezas publicitarias son propuestas anteriores, no una oferta vigente. Antes de iniciar desarrollo, se ocultarán los botones, precios, enlaces y pantallas de planes pagos. No desarrollar cobros ni funciones premium sin autorización expresa de la persona responsable del proyecto.
+Los planes y precios visibles en piezas publicitarias de borrador no son una oferta vigente. No desarrollar cobros, promoción de planes ni funciones premium sin autorización expresa de la persona responsable del proyecto.
 
 El repositorio es privado. Aun así, no agregar contraseñas, tokens, documentos de identidad, datos reales de estudiantes ni información sensible. Para las pruebas usar datos ficticios; cualquier piloto con menores requiere revisar privacidad y autorización apropiadas.
 
-Para servir un prototipo estático localmente, abre el archivo HTML correspondiente en un navegador moderno. No uses datos reales ni interpretes el prototipo como un sistema seguro de cuentas.
+Abre `web/index.html` en un navegador moderno para probar el demo. No uses datos reales ni interpretes el prototipo como un sistema seguro de cuentas.
+
+## Demo desplegable en Vercel
+
+`web/index.html` contiene el demo adjunto como página estática independiente. Para conectarlo mediante Git, importa este repositorio en Vercel y configura **Root Directory** como `web`, **Framework Preset** como `Other` y deja vacíos los comandos de build e instalación y el directorio de salida. Vercel servirá `web/index.html` en `/` sin dependencias ni proceso de compilación. Mantener `web/` como raíz evita publicar accidentalmente documentos y materiales del resto del repositorio. Las actualizaciones de la rama conectada activarán nuevos despliegues. El registro y el progreso usan almacenamiento local del navegador; no son autenticación ni una cuenta sincronizada. No introduzcas datos personales reales.

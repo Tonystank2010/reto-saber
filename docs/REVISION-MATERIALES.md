@@ -1,22 +1,22 @@
 # Revisión de materiales del proyecto
 
-Revisión inicial de los archivos compartidos; no es una auditoría legal ni una prueba exhaustiva de los prototipos.
+Revisión inicial de los archivos compartidos; no es una auditoría legal ni una prueba exhaustiva de los prototipos. Los HTML históricos descritos en esta nota fueron retirados del repositorio por solicitud del usuario; el demo web vigente es `web/index.html`.
 
 ## Prototipos
 
 ### Saber 11
 
-Los demos existentes exploran registro/perfil, niveles, repasos, retos de opción múltiple y áreas Saber 11. Algunos archivos incorporan datos de ejemplo y diferencias de flujo. La implementación es HTML/JavaScript local, con persistencia de navegador en algunas versiones. No equivale a autenticación centralizada, sincronización de cuentas, pagos o notificaciones reales.
+Los demos revisados anteriormente exploraban registro/perfil, niveles, repasos, retos de opción múltiple y áreas Saber 11. Algunos archivos incorporaban datos de ejemplo y diferencias de flujo. Eran HTML/JavaScript local, con persistencia de navegador en algunas versiones. No equivalían a autenticación centralizada, sincronización de cuentas, pagos o notificaciones reales. Ya no se incluyen en el repositorio.
 
 ### Lanzador de tres pruebas
 
-`prototypes/saber-pro-tyt/Retos de 5 - Saber 11, Saber Pro y TyT.html` presenta un selector para Saber 11, Saber Pro y TyT, y contiene demos embebidos. La etiqueta de prototipo y el aviso de que no es el ICFES deben conservarse en cualquier presentación pública.
+El lanzador revisado presentaba un selector para Saber 11, Saber Pro y TyT y contenía demos embebidos. Este archivo fue retirado; no forma parte del sitio actual.
 
 ### Saber Pro y TyT
 
-`prototypes/saber-pro-tyt/Reto Pro - Prototipo Saber Pro y TyT.html` comparte experiencia para ambas pruebas, con módulos genéricos, retos cronometrados, progreso y taller de escritura. La evaluación del ensayo usa reglas simples (por ejemplo, extensión, conectores, párrafos y expresiones de postura); no es un modelo de IA ni reemplaza evaluación humana u oficial. Los módulos específicos se muestran como próximos niveles y la diferenciación Pro/TyT visible es limitada. Antes de anunciar cobertura, confirmar módulos, estructura y contenidos vigentes para cada examen.
+El demo revisado de Saber Pro y TyT compartía una experiencia con módulos genéricos, retos cronometrados, progreso y taller de escritura. La evaluación del ensayo usaba reglas simples; no era un modelo de IA ni reemplazaba evaluación humana u oficial. El archivo fue retirado y no forma parte del sitio actual.
 
-Los precios y la interfaz de planes en este prototipo son ilustrativos. El botón de compra no realiza un cobro real. Los materiales se conservan solo como referencia; cuando empiece el desarrollo autorizado, se ocultará toda promoción de planes pagos y no se implementarán cobros ni funciones premium hasta recibir autorización expresa.
+Los precios y la interfaz de planes observados en los prototipos históricos eran ilustrativos. Esos HTML fueron retirados; no implementar cobros ni funciones premium sin autorización expresa.
 
 ## Guía ABC y Misiones
 

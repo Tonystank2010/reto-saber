@@ -15,7 +15,7 @@ La definición de cuál público atender primero y si las pruebas se lanzarán j
 
 ## Propuesta de experiencia
 
-Los prototipos exploran retos de opción múltiple, repaso, progreso, niveles, rachas, juego con amistades y práctica de escritura. Estas son capacidades demostradas por los archivos locales, no garantías de una plataforma operativa. En Reto Pro, la retroalimentación de escritura es heurística y no equivale a una calificación oficial ni a evaluación humana.
+El demo web actual explora retos de opción múltiple, repaso y progreso. Es una página estática con datos locales, no una plataforma operativa.
 
 ## Etapa actual
 
@@ -31,7 +31,7 @@ Planeación e ideación. Copilot organiza decisiones y tareas; Claude aporta ide
 
 ## Límites confirmados
 
-- No cambiar ni desarrollar el código durante la planeación.
+- No desarrollar el producto durante la planeación. La preparación solicitada para desplegar el demo estático en Vercel es acotada; no autoriza desarrollar el producto, infraestructura de cuentas ni un piloto.
 - Cuando el equipo autorice la fase de desarrollo, ocultar de la interfaz todos los botones, precios, enlaces y pantallas que promocionan planes pagos.
 - No implementar pagos, cobros ni funciones premium hasta que la persona responsable lo autorice expresamente.
 - No presentar los prototipos, sus puntajes ni sus pantallas de pago como un producto publicado o una oferta vigente.

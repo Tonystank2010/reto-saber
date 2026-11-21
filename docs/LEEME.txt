@@ -2,7 +2,12 @@ PROYECTO HERMANOS OSPINA TABORDA - Empresa 5.
 ==============================================
 Socios: Samuel, Sergio y Juan Manuel · Mentora: Bety
 
-DEMOS (doble clic para abrir en Chrome o Edge; para verlas como celular: F12 y luego Ctrl+Shift+M)
+ARCHIVO HISTORICO
+-----------------
+Los prototipos HTML descritos en esta guía fueron retirados del repositorio por solicitud del usuario el 20 de noviembre de 2026. No intentes abrirlos desde este repositorio ni uses las cuentas de prueba descritas más abajo.
+El demo web vigente está en ../web/index.html. Para Vercel, configura `web` como Root Directory. Usa solo datos ficticios; no es una cuenta ni servicio real.
+
+Las notas siguientes conservan referencias del paquete original para contexto; no son instrucciones para probar el demo actual.
 
 *** NUEVAS (version 2) ***
 A. Reto Saber v2 - Demo inicial.html
@@ -61,11 +66,7 @@ ARCHIVOS DE TRABAJO
    las preguntas de la app deben ser propias.
 
 PARA REVISAR HOY CON DANNY Y JUANMA (15 minutos)
-[ ] Abrir "Demo desde el inicio": Empezar > elegir plan > registro completo > diagnostico.
-[ ] Tocar "Pais" y elegir Mexico o Chile: ver la prueba que aplica y el boton a la pagina oficial.
-[ ] Jugar un reto en plan Gratis: ver las 5 vidas y el aviso de que el progreso no se guarda.
-[ ] Abrir "Demo.html" > demo de Sergio > Cartillas, Liga de amigos y Premium (descuentos).
-[ ] Entrar con acudiente@ejemplo.com y ver el panel del acudiente.
+[ ] Abrir el demo actual desde web/index.html y usar datos ficticios.
 [ ] Excel > hoja "Arranque 1 nov": ingresos y gastos mes a mes desde el 1 de noviembre.
 [ ] Anotar todo lo que falle o quieran cambiar en Excel > "Pruebas con amigos".
 

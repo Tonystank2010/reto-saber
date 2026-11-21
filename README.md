@@ -4,7 +4,7 @@ Demo local, ejecutable y editable de práctica gamificada para Saber 11, Saber P
 
 ## Alcance y estado
 
-Esta implementación es un demo de alcance limitado, autorizado expresamente para esta entrega. **No inicia el desarrollo general, no aprueba un piloto y no cambia decisiones del equipo.** El proyecto sigue en planeación; `DECISIONES.md` no se modifica. Saber Pro y Saber TyT se muestran sin ruta disponible ni contenido inventado. Este repositorio no ofrece planes, pagos ni funciones premium.
+Esta implementación es un demo de alcance limitado, autorizado expresamente para esta entrega. **No inicia el desarrollo general, no aprueba un piloto y no cambia decisiones del equipo.** El proyecto sigue en planeación. Saber Pro y Saber TyT se muestran sin ruta disponible ni contenido inventado. Este repositorio no ofrece planes, pagos ni funciones premium.
 
 Incluye cinco áreas abiertas de Saber 11, cada una con tres niveles de dificultad creciente y lecciones de cinco preguntas; explicación inmediata, XP, racha local, repaso espaciado, perfil local y liga semanal ilustrativa con apodos ficticios. Al crear el perfil se puede realizar una orientación inicial opcional de cinco preguntas por área; las sugerencias se calculan por área, se pueden repetir y no bloquean ningún nivel. El resultado es ilustrativo, no oficial, no predictivo y no depende del grado. El banco contiene 75 preguntas originales de ejemplo (cinco por cada combinación de área y nivel), no oficiales y pendientes de revisión curricular.
 
@@ -35,6 +35,12 @@ El flujo de GitHub Actions instala desde el lockfile (`npm ci`) y ejecuta los ci
 
 El demo persiste perfil y progreso en el almacenamiento local del navegador. Al cargar, valida su estructura, recupera de forma explícita un archivo local dañado y limpia referencias a preguntas/áreas/niveles retirados. Si el navegador bloquea el almacenamiento o no puede guardar, muestra un aviso y conserva los cambios solo en memoria durante esa sesión. Usa el control de eliminación del perfil o elimina los datos del sitio `localhost` para empezar de nuevo. Aunque se permite ingresar cualquier correo, por seguridad de datos personales se recomienda usar uno ficticio en este demo.
 
+## Despliegue del demo adjunto en Vercel
+
+`web/index.html` contiene una versión HTML estática e independiente del demo adjunto. Para desplegar esa página, importa este repositorio en Vercel y configura **Root Directory** como `web`, **Framework Preset** como `Other` y deja vacíos los comandos de build e instalación y el directorio de salida. Vercel servirá ese archivo en `/` sin dependencias ni compilación. Mantener `web/` como raíz evita publicar accidentalmente documentos y materiales del resto del repositorio. La app Vite principal está en la raíz y es distinta de esta página estática. Las actualizaciones de la rama conectada activarán nuevos despliegues.
+
+El registro y progreso del HTML adjunto usan almacenamiento local del navegador; no son autenticación ni una cuenta sincronizada. No introduzcas datos personales reales.
+
 ## Contenido editable
 
 - `contenido/preguntas.json` y `contenido/preguntas-niveles.json`: banco de preguntas.
@@ -59,8 +65,6 @@ El aviso **«Demo: evita ingresar datos reales sensibles»** está visible en el
 
 Los ejercicios se identifican como **preguntas de práctica, no oficiales**. Reto Saber no presenta afiliación al ICFES, resultados oficiales ni pronósticos. El contenido es ilustrativo y aún requiere revisión humana antes de cualquier uso fuera del demo. No se han decidido el alcance curricular, el piloto, el stack definitivo ni la política de producción; esas preguntas siguen con el equipo.
 
-Se comprobó en navegador el registro e inicio de sesión, el diagnóstico completo por cinco áreas, la opción de omitirlo y repetirlo, el acceso a los 15 niveles, una lección con persistencia de XP y el borrado del perfil. Inicio, registro, camino y diagnóstico se midieron en retrato 360×780, 390×844, 768×1024 y 1024×1366 y en paisaje 780×360, 844×390, 1024×768 y 1366×1024: sin desbordamiento horizontal y con controles visibles de al menos 44 px.
-
 ## Organización del repositorio
 
 - `PROYECTO.md`, `DECISIONES.md`, `TAREAS.md` e `IDEAS.md`: brief, decisiones humanas, pendientes y propuestas.
@@ -68,4 +72,4 @@ Se comprobó en navegador el registro e inicio de sesión, el diagnóstico compl
 - `src/`: aplicación y lógica de práctica.
 - `scripts/`: validación del banco de preguntas.
 - `.github/workflows/demo-ci.yml`: verificaciones del pull request.
-- `prototypes/`, `planning/`, `marketing/` y `docs/`: materiales existentes de referencia; no son una oferta ni decisiones del producto.
+- `planning/`, `marketing/` y `docs/`: materiales de referencia. Los prototipos históricos de `prototypes/` fueron retirados a petición del usuario.
